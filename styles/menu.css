@@ -1,0 +1,268 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --lgray: #ced4daff;
+  --cbcrayola: #adb5bdff;
+  --ssilver: #6c757dff;
+  --davys-grey: #495057ff;
+  --onyx: #343a40ff;
+  --eblack: #212529ff; }
+
+/* Estilos para video de fondo */
+video {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1; }
+
+/* Estilos para el header */
+header {
+  height: 5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  background: var(--eblack); }
+
+/* Estilos para el ícono del Menú */
+.icono-menu {
+  position: relative;
+  z-index: 10; }
+
+.icono-menu img {
+  vertical-align: top;
+  width: 40px;
+  cursor: pointer; }
+
+/* Estilos para el contenedor del Menú */
+.cont-menu {
+  background-color: var(--eblack);
+  box-shadow: 2px 0px 5px 2px #424242;
+  width: 220px;
+  height: 1240px;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .5s ease;
+  z-index: 9; }
+
+/* Estilos por agregar en JavaScript */
+.active {
+  transform: translate(-600px); }
+
+/* Estilos para el listado del Menú */
+.cont-menu ul {
+  padding: 100px 0px 20px 0px;
+  list-style: none; }
+
+.cont-menu ul li a {
+  color: var(--lgray);
+  display: block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+  text-decoration: none;
+  padding: 10px 50px;
+  cursor: pointer; }
+
+.cont-menu ul li:hover {
+  background-color: rgba(228, 228, 228, 0.3);
+  color: #2a2a2a; }
+
+/* Estilos para el titulo */
+.tittle a {
+  color: var(--lgray);
+  text-decoration: none;
+  font-family: 'Cabin', sans-serif; }
+
+/* Estilos para el Main */
+main {
+  height: 70rem;
+  margin: 40px; }
+
+/* Estilos para el Footer */
+footer {
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 0%;
+  background: var(--eblack);
+  color: var(--lgray); }
+
+/* Estilos para los iconos de redes */
+.redes {
+  display: flex;
+  gap: 15px; }
+
+/* 
+Estilos page 2 Nosotros
+*/
+/* Estilos para encabezado */
+.encabezado {
+  height: 10rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 30px;
+  background: rgba(57, 84, 134, 0.7); }
+
+/* Estilos para contenedores */
+.contenedor {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  gap: 30px; }
+
+.contenedor_article {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background: rgba(57, 84, 134, 0.7);
+  position: relative; }
+
+.contenedor_article figure img {
+  height: 300px;
+  width: 400px;
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 0px 0px 50px black; }
+
+/* Estilos para el texto*/
+.contenedor_div {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+  margin-left: 5px; }
+
+.h3 {
+  font-size: 30px;
+  font-family: 'Anton', sans-serif;
+  color: #a5a4a4; }
+
+.p {
+  font-size: 23px;
+  font-family: 'Roboto Mono', monospace;
+  color: #c48620; }
+
+.p:hover {
+  color: #a5a4a4; }
+
+/*
+Estilos Page 3 Servicios
+*/
+.contenedor_page3 {
+  display: flex;
+  justify-items: center;
+  gap: 30px; }
+
+/* Estilos Servicios*/
+.contenedor_servicio {
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 40px;
+  border: 2px solid black;
+  background: rgba(57, 84, 134, 0.7);
+  position: relative; }
+
+/* Estilos para titulo de servicios */
+.titulo_servicios {
+  height: 65px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid black;
+  font-size: 3em; }
+
+.list_item {
+  list-style: none;
+  font-size: 20px; }
+
+/* Estilos para el boton */
+.precio {
+  font-size: 40px; }
+
+.btn_servicios {
+  height: 50px;
+  width: 100%;
+  border: 1px solid aqua;
+  position: absolute;
+  bottom: 0%;
+  font-size: 16px;
+  color: aqua;
+  cursor: pointer; }
+
+.btn_servicios2 {
+  height: 50px;
+  width: 100%;
+  border: 1px solid aqua;
+  position: absolute;
+  bottom: 0%;
+  font-size: 16px;
+  cursor: pointer;
+  background: aqua; }
+
+.h2 {
+  font-size: 40px;
+  font-family: 'Anton', sans-serif;
+  color: #a5a4a4; }
+
+/*
+Estilos page 4 Clientes
+*/
+.contenedor_clientes {
+  display: flex;
+  gap: 15px;
+  margin-top: 40px;
+  justify-content: center; }
+
+.p2 {
+  font-size: 20px; }
+
+.tabla {
+  height: 500px;
+  width: 100%;
+  margin-top: 30px;
+  background: rgba(57, 84, 134, 0.7); 
+}
+
+/*
+Estilos page 5 Contactos
+*/
+
+/* Estilos para el formulario */
+.formulario{
+  display: flex;
+  flex-flow: column;
+}
+
+label{
+  display: block;
+  padding-bottom: 37px;
+}
+
+input{
+  height: 50px;
+  width: 500px;
+}
+
+input:last-child{{
+  height: 50px;
+}}
